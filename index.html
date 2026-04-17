@@ -8,9 +8,9 @@
     <link rel="icon" type="image/png" sizes="256x256" href="./assets/favicon.png" />
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
-
     <header class="header">
       <div class="container header__inner">
         <a href="#hero" class="brand">
@@ -27,7 +27,12 @@
           <a href="#design">Design</a>
           <a href="#concorrente">Concorrência</a>
           <a href="#comparativo">Comparativo</a>
+          <a href="#workflow">Como Funciona</a>
+          <a href="#testimonials">Depoimentos</a>
         </nav>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema" title="Alternar tema">
+          <span class="theme-toggle__icon">🌙</span>
+        </button>
       </div>
     </header>
 
@@ -53,7 +58,7 @@
         </div>
       </section>
 
-      <section class="section section--dark" id="design">
+      <section class="section" id="design">
         <div class="container section__inner">
           <div class="section__content">
             <p class="eyebrow eyebrow--light">Soluções digitais sob medida para resultados reais</p>
@@ -118,18 +123,369 @@
           </div>
         </div>
       </section>
+
+      <section class="section section--authority" id="authority">
+        <div class="container authority__container">
+          <div class="authority__header">
+            <span class="authority__badge">AUTORIDADE & RESULTADOS</span>
+            <h2>Especialistas em Escala de Faturamento via Internet</h2>
+            <p>
+              Não entregamos apenas um site. Entregamos uma estrutura de vendas validada, pensada para o comportamento do consumidor moderno.
+            </p>
+          </div>
+
+          <div class="authority__cards">
+            <article class="authority-card">
+              <div class="authority-card__icon">�</div>
+              <h3>Velocidade de Execução</h3>
+              <p>
+                Seu negócio não pode esperar. Colocamos sua estrutura no ar em tempo recorde para você começar a faturar.
+              </p>
+            </article>
+
+            <article class="authority-card">
+              <div class="authority-card__icon">🎯</div>
+              <h3>Foco Total em Conversão</h3>
+              <p>
+                Cada botão, cor e texto é posicionado estrategicamente para levar o visitante à ação (WhatsApp ou Checkout).
+              </p>
+            </article>
+
+            <article class="authority-card">
+              <div class="authority-card__icon">📈</div>
+              <h3>Escalabilidade</h3>
+              <p>
+                Estrutura pronta para receber tráfego pago (Google/Meta Ads) e suportar o crescimento do seu negócio.
+              </p>
+            </article>
+          </div>
+
+          <div class="authority__banner">
+            <p>
+              Já ajudamos mais de <strong>1000 empresas e empreendedores</strong> em todo o Brasil a dominarem seus mercados digitais.
+            </p>
+            <a class="btn btn-primary btn--accent" href="#contact">CONSTRUIR MINHA AUTORIDADE AGORA</a>
+          </div>
+
+          <div class="authority__extra">
+            <div class="authority__extra-cards">
+              <article class="authority-card">
+                <div class="authority-card__icon">📊</div>
+                <h3>Credibilidade</h3>
+                <p>Passe confiança imediata para seus clientes com um site profissional.</p>
+              </article>
+
+              <article class="authority-card">
+                <div class="authority-card__icon">🌐</div>
+                <h3>Sem Mensalidade</h3>
+                <p>Pague uma única vez e o site é seu. Sem taxas escondidas.</p>
+              </article>
+
+              <article class="authority-card">
+                <div class="authority-card__icon">⚡</div>
+                <h3>Ultra Rápido</h3>
+                <p>Tecnologia de ponta que carrega instantaneamente em qualquer celular.</p>
+              </article>
+
+              <article class="authority-card">
+                <div class="authority-card__icon">🔍</div>
+                <h3>Fácil de Achar</h3>
+                <p>Otimizado para o Google, facilitando que novos clientes te encontrem.</p>
+              </article>
+            </div>
+
+            <div class="authority__cta">
+              <a class="btn btn-primary btn--accent btn--wide" href="#contact">QUERO ESTA ESTRUTURA COMPLETA</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--scenario" id="scenario">
+        <div class="container scenario__container">
+          <div class="scenario__header">
+            <span class="scenario__badge">IMAGINE ESSE CENÁRIO</span>
+            <h2>Como será o seu negócio com Presença Digital Inabalável</h2>
+          </div>
+
+          <div class="scenario__cards">
+            <article class="scenario-card">
+              <div class="scenario-card__icon">💸</div>
+              <h3>Vendas chegando no piloto automático</h3>
+              <p>Seu site trabalha enquanto você dorme, filtrando curiosos e trazendo clientes qualificados direto para o seu WhatsApp ou checkout.</p>
+            </article>
+
+            <article class="scenario-card">
+              <div class="scenario-card__icon">👑</div>
+              <h3>Autoridade Instantânea</h3>
+              <p>Quando um cliente te pesquisa, ele encontra uma vitrine profissional que passa confiança imediata. O preço deixa de ser o fator principal.</p>
+            </article>
+
+            <article class="scenario-card">
+              <div class="scenario-card__icon">🛡️</div>
+              <h3>Menos Dependência de Indicações</h3>
+              <p>Tenha o controle total do crescimento do seu faturamento, sabendo exatamente de onde vêm os seus novos clientes todos os dias.</p>
+            </article>
+          </div>
+
+          <div class="scenario__banner">
+            <p>Quantos desses clientes hoje estão indo direto para o seu concorrente simplesmente porque ele tem uma estrutura melhor que a sua?</p>
+            <a class="btn btn-primary btn--accent btn--wide" href="#contact">QUERO DOMINAR O MEU MERCADO</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--objection" id="objection">
+        <div class="container objection__container">
+          <div class="section__header">
+            <p class="eyebrow eyebrow--light">QUEBRA DE OBJEÇÃO</p>
+            <h2>Não É Apenas Um Site. É Uma Estrutura de Demanda.</h2>
+          </div>
+
+          <div class="objection__panel">
+            <div class="objection__text">
+              <p>Você não precisa ser expert em tecnologia para vender online.</p>
+              <p>
+                Cuidamos de 100% da parte técnica (servidores, segurança, SEO, design) para que você foque exclusivamente em crescer seu negócio. É como contratar uma equipe de TI completa por um valor extremamente acessível.
+              </p>
+            </div>
+
+            <div class="objection__features">
+              <article class="objection-feature">
+                <span class="objection-feature__icon">✔</span>
+                <div>
+                  <h3>Setup Completo</h3>
+                  <p>Entregamos o site pronto para uso, com botões de WhatsApp ativos.</p>
+                </div>
+              </article>
+
+              <article class="objection-feature">
+                <span class="objection-feature__icon">✔</span>
+                <div>
+                  <h3>Baixo Custo</h3>
+                  <p>Investimento único, sem taxas mensais abusivas de desenvolvimento.</p>
+                </div>
+              </article>
+            </div>
+
+            <a class="btn btn-primary btn--accent btn--wide" href="#contact">QUERO MINHA ESTRUTURA PRONTA</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--target" id="target">
+        <div class="container target__container">
+          <div class="section__header">
+            <p class="eyebrow eyebrow--light">CHEGA DE AMADORISMO</p>
+            <h2>Perfeito para lojistas, prestadores de serviço e pequenos negócios.</h2>
+          </div>
+
+          <div class="target__cards">
+            <article class="target-card">
+              <div class="target-card__icon">📱</div>
+              <h3>Funciona em Tudo</h3>
+              <p>Seu cliente acessa pelo celular, tablet ou computador. Design responsivo que se adapta perfeitamente a qualquer tamanho de tela.</p>
+            </article>
+
+            <article class="target-card">
+              <div class="target-card__icon">⚡</div>
+              <h3>Não Trava Nunca</h3>
+              <p>Nossa tecnologia otimizada carrega na hora. Em um mundo onde cada segundo conta, um site rápido é essencial para não perder a atenção do cliente.</p>
+            </article>
+
+            <article class="target-card">
+              <div class="target-card__icon">💬</div>
+              <h3>Botão de Orçamento</h3>
+              <p>Facilite o contato. Botão de WhatsApp fixo e estratégico para o visitante falar com você na hora certa que tem interesse no seu produto ou serviço.</p>
+            </article>
+          </div>
+
+          <div class="target__action">
+            <a class="btn btn-primary btn--accent btn--wide" href="#contact">QUERO ESTE DIFERENCIAL NO MEU NEGÓCIO</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--workflow" id="workflow">
+        <div class="container workflow__container">
+          <div class="section__header">
+            <p class="eyebrow eyebrow--light">COMO FUNCIONA</p>
+            <h2>Seu negócio online em três passos simples.</h2>
+          </div>
+
+          <div class="workflow__cards">
+            <article class="workflow-card">
+              <div class="workflow-card__number">01</div>
+              <h3>Você Escolhe</h3>
+              <p>Escolha o modelo que mais combina com seu negócio. Temos opções validadas para diversos nichos. Sem reuniões infinitas, vamos direto ao ponto.</p>
+            </article>
+
+            <article class="workflow-card">
+              <div class="workflow-card__number">02</div>
+              <h3>Nos Criamos</h3>
+              <p>Nossa equipe configura tudo: textos persuasivos, cores da sua marca e imagens de alta qualidade. Você só precisa revisar o resultado final.</p>
+            </article>
+
+            <article class="workflow-card">
+              <div class="workflow-card__number">03</div>
+              <h3>Você Vende</h3>
+              <p>Site no ar em até 48h. Agora é só compartilhar o link nas redes sociais e começar a receber pedidos e orçamentos pelo WhatsApp.</p>
+            </article>
+          </div>
+
+          <div class="workflow__action">
+            <a class="btn btn-primary btn--accent btn--wide" href="#contact">QUERO MEU SITE EM 48H</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--testimonials" id="testimonials">
+        <div class="container testimonials__container">
+          <div class="section__header">
+            <p class="eyebrow eyebrow--light">DEPOIMENTOS REAIS</p>
+            <h2>Quem aplicou o método aprovou o resultado</h2>
+            <p>Não acredite apenas na nossa palavra. Veja o que nossos parceiros estão dizendo.</p>
+          </div>
+
+          <div class="testimonial-grid swiper testimonials-swiper">
+            <div class="swiper-wrapper">
+              <article class="testimonial-card swiper-slide">
+                <div class="testimonial-avatar">RJ</div>
+                <p class="testimonial-name">Roberto Junior</p>
+                <p class="testimonial-role">Loja de Acessórios</p>
+                <p class="testimonial-stars">★★★★★</p>
+                <p class="testimonial-text">O suporte deles é surreal. Não só entregaram o site e as copy, como me ajudaram a conectar com o CRM e agora minhas leads chegam direto no WhatsApp da empresa.</p>
+              </article>
+
+              <article class="testimonial-card testimonial-card--featured swiper-slide">
+                <div class="testimonial-avatar">FL</div>
+                <p class="testimonial-name">Fernanda Lima</p>
+                <p class="testimonial-role">Esteticista</p>
+                <p class="testimonial-stars">★★★★★</p>
+                <p class="testimonial-text">Meu Instagram era bonito mas não vendia. O site organizou tudo. A página de vendas que eles criaram converte muito bem, e o cliente já chega pronto pra agendar.</p>
+              </article>
+
+              <article class="testimonial-card swiper-slide">
+                <div class="testimonial-avatar">RC</div>
+                <p class="testimonial-name">Ricardo Costa</p>
+                <p class="testimonial-role">Consultor</p>
+                <p class="testimonial-stars">★★★★★</p>
+                <p class="testimonial-text">A velocidade do site e o botão de orçamento fizeram a diferença. Recebo pedidos mais qualificados e fecho mais conversas no WhatsApp.</p>
+              </article>
+
+              <article class="testimonial-card swiper-slide">
+                <div class="testimonial-avatar">MA</div>
+                <p class="testimonial-name">Marta Almeida</p>
+                <p class="testimonial-role">Esteticista</p>
+                <p class="testimonial-stars">★★★★★</p>
+                <p class="testimonial-text">O trabalho deles deixou meu site mais profissional e atraente. As mensagens começaram a chegar de clientes que antes nem respondiam.</p>
+              </article>
+
+              <article class="testimonial-card swiper-slide">
+                <div class="testimonial-avatar">PS</div>
+                <p class="testimonial-name">Pedro Santos</p>
+                <p class="testimonial-role">Personal Trainer</p>
+                <p class="testimonial-stars">★★★★★</p>
+                <p class="testimonial-text">O site ficou rápido e direto. O botão de contato no WhatsApp gerou mais agendações e menos dúvidas por mensagem.</p>
+              </article>
+
+              <article class="testimonial-card swiper-slide">
+                <div class="testimonial-avatar">LM</div>
+                <p class="testimonial-name">Larissa Moura</p>
+                <p class="testimonial-role">Consultora de Moda</p>
+                <p class="testimonial-stars">★★★★★</p>
+                <p class="testimonial-text">A nova presença digital aumentou minha autoridade. Agora recebo pedidos de clientes qualificados que realmente querem fechar negócio.</p>
+              </article>
+            </div>
+
+          </div>
+
+          <div class="testimonial__footer">
+            <a class="btn btn-primary btn--accent btn--wide" href="#contact">QUERO TER RESULTADOS COMO ESTES</a>
+            <p class="testimonial-note">Junte-se a centenas de empresários satisfeitos</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--faq" id="faq">
+        <div class="container faq__container">
+          <div class="section__header">
+            <span class="faq__badge">DÚVIDAS FREQUENTES</span>
+            <h2>Ficou com alguma dúvida?</h2>
+            <p>Clique no botão abaixo e fale diretamente com um especialista agora mesmo.</p>
+          </div>
+
+          <div class="faq__list">
+            <details class="faq-item" open>
+              <summary>Quanto tempo leva para ficar pronto?</summary>
+              <p>Em geral entregamos sua estrutura completa em até 48h após aprovação dos materiais fornecidos por você.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Preciso pagar mensalidade?</summary>
+              <p>Não. Você paga apenas pelo desenvolvimento inicial, sem taxas de manutenção obrigatórias.</p>
+            </details>
+            <details class="faq-item">
+              <summary>E sobre a hospedagem?</summary>
+              <p>Nós cuidamos da hospedagem e do suporte técnico para que seu site fique sempre no ar e seguro.</p>
+            </details>
+            <details class="faq-item">
+              <summary>O site funciona no celular?</summary>
+              <p>Sim. Todas as nossas entregas são responsivas e otimizadas para entregar a melhor experiência em smartphones.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Vocês fazem o texto do site?</summary>
+              <p>Sim. Entregamos textos estratégicos e persuasivos, prontos para gerar autoridade e conversão.</p>
+            </details>
+          </div>
+
+          <div class="faq__action">
+            <a class="btn btn-primary btn--accent btn--wide" href="#contact">FALAR COM ESPECIALISTA NO WHATSAPP</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--final-cta">
+        <div class="container section__centered">
+          <span class="eyebrow eyebrow--light">O PRÓXIMO PASSO DO SEU SUCESSO</span>
+          <h2>O Seu Negócio Merece uma <span class="highlight">Presença Digital de Elite</span></h2>
+          <p>Não espere mais para se tornar a referência do seu mercado. Comece a construir sua máquina de vendas ainda hoje com especialistas que entendem de lucro.</p>
+          <a class="btn btn-primary btn--accent btn--wide" href="#contact">QUERO MINHA ESTRUTURA DE ELITE</a>
+          <p class="final-cta__note">Atendimento imediato no WhatsApp</p>
+        </div>
+      </section>
     </main>
 
     <footer class="footer" id="contact">
       <div class="container footer__inner">
-        <div>
-          <p class="footer__eyebrow">Pronto para começar?</p>
-          <h2>Vamos construir sua máquina de vendas juntos</h2>
+        <div class="footer__brand">
+          <a href="#hero" class="footer__brand-link">BWS</a>
+          <p>Desenvolvemos ecossistemas digitais de alta performance para empresas que buscam liderança.</p>
         </div>
-        <a class="btn btn-primary" href="mailto:contato@armflow.com.br">Enviar mensagem</a>
+
+        <div class="footer__links">
+          <p class="footer__section-title">Links Úteis</p>
+          <ul class="footer__nav">
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#design">Design</a></li>
+            <li><a href="#comparativo">Comparativo</a></li>
+            <li><a href="#workflow">Como Funciona</a></li>
+            <li><a href="#testimonials">Depoimentos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <p class="footer__section-title">Contato</p>
+          <p>Fale conosco exclusivamente pelo WhatsApp para um atendimento ágil.</p>
+          <a class="btn btn-secondary btn--wide footer__whatsapp" href="mailto:contato@bws.com.br">Atendimento WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="footer__base">
+        <p>© 2026 BWS. Todos os direitos reservados. v1.0.0</p>
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js" defer></script>
   </body>
 </html>
