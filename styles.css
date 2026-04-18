@@ -109,8 +109,15 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 1rem;
   padding: 1rem 0;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
 }
 
 .brand {
@@ -121,9 +128,20 @@ button {
 }
 
 .nav {
-  display: flex;
+  display: none;
   align-items: center;
-  gap: 1.75rem;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 4rem;
+  padding: 1rem;
+  background: var(--header-bg);
+  border: 1px solid var(--header-border);
+  border-radius: 1rem;
+}
+
+.nav.show {
+  display: flex;
 }
 
 .nav a {
@@ -137,12 +155,14 @@ button {
 }
 
 .menu-toggle {
-  display: none;
+  display: flex;
   width: 2.5rem;
   height: 2.5rem;
   align-items: center;
   justify-content: center;
+  margin-right: 12px;
   gap: 0.3rem;
+  z-index: 1;
 }
 
 .menu-toggle__bar {
@@ -1103,31 +1123,6 @@ button {
 }
 
 @media (max-width: 780px) {
-  .header__inner {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .nav {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    gap: 1rem;
-    margin-top: 1rem;
-    padding: 1rem;
-    background: rgba(10, 10, 10, 0.96);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: 1rem;
-  }
-
-  .nav.show {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: inline-flex;
-  }
-
   .comparison-grid {
     grid-template-columns: 1fr;
   }
