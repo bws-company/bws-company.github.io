@@ -39,8 +39,13 @@
   --device-screen-border: rgba(255, 255, 255, 0.1);
 }
 
+:root[data-theme='dark'] .brand {
+  filter: brightness(0) invert(1);
+}
+
 * {
   box-sizing: border-box;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 html {
@@ -54,6 +59,7 @@ body {
   color: var(--text);
   background-color: var(--bg);
   line-height: 1.6;
+  transition: background 0.5s ease, background-color 0.5s ease, color 0.5s ease;
 }
 
 img,
@@ -77,6 +83,19 @@ button {
   border: none;
   background: none;
   cursor: pointer;
+}
+
+/* Hidden state */
+.hidden {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease;
+}
+
+/* Visible state */
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .sr-only {
@@ -221,6 +240,7 @@ button {
   background: rgba(24, 152, 255, 0.08);
   color: var(--accent);
   transition: background 0.2s ease, color 0.2s ease;
+  overflow: hidden;
 }
 
 .theme-toggle:hover,
@@ -230,6 +250,21 @@ button {
 
 .theme-toggle__icon {
   font-size: 1.1rem;
+  display: inline-block;
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.theme-toggle.rotating .theme-toggle__icon {
+  transform: rotate(360deg);
+}
+
+@keyframes themeToggleSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .hero {
@@ -1135,7 +1170,15 @@ button {
 }
 
 .footer__whatsapp {
-  width: fit-content;
+  background: #25d366;
+  border-color: #25d366;
+  color: white;
+}
+
+.footer__whatsapp:hover,
+.footer__whatsapp:focus-visible {
+  background: #128c7e;
+  border-color: #128c7e;
 }
 
 .footer__base {

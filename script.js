@@ -15,6 +15,12 @@ const setTheme = (theme) => {
 
   if (themeToggle) {
     themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Ativar tema claro' : 'Ativar tema escuro');
+    
+    // Add rotation animation to icon
+    themeToggle.classList.add('rotating');
+    setTimeout(() => {
+      themeToggle.classList.remove('rotating');
+    }, 400);
   }
 };
 
@@ -76,6 +82,21 @@ const sidebarLinks = document.querySelectorAll('.sidebar a');
 sidebarLinks.forEach((link) => {
   link.addEventListener('click', closeSidebar);
 });
+
+// Scroll-triggered animations using Intersection Observer
+const elements = document.querySelectorAll('.hidden');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, {
+  threshold: 0.2 // triggers when 20% visible
+});
+
+elements.forEach(el => observer.observe(el));
 
 let testimonialSwiper = null;
 
