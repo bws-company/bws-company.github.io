@@ -22,7 +22,7 @@
 :root[data-theme='dark'] {
   --bg: #070d1d;
   --surface: #0d1b38;
-  --surface-2: #12254b;
+  --surface-2: #070d1d;
   --text: #f4f8ff;
   --muted: #8faed5;
   --accent: #5db4ff;
@@ -380,7 +380,6 @@ button {
 }
 
 .section--authority {
-  background: var(--surface-2);
   color: var(--text);
 }
 
@@ -510,7 +509,6 @@ button {
 }
 
 .section--scenario {
-  background: var(--surface-2);
   color: var(--text);
 }
 
@@ -601,10 +599,6 @@ button {
   color: var(--text);
 }
 
-.section--objection {
-  background: var(--surface-2);
-}
-
 .objection__panel {
   display: grid;
   gap: 1.5rem;
@@ -663,10 +657,6 @@ button {
   line-height: 1.8;
 }
 
-.section--target {
-  background: var(--surface-2);
-}
-
 .target__cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -712,7 +702,6 @@ button {
 
 .section--workflow,
 .section--testimonials {
-  background: var(--surface-2);
   color: var(--text);
 }
 
@@ -860,7 +849,6 @@ button {
 }
 
 .section--faq {
-  background: var(--section-dark-bg);
   color: var(--text);
 }
 
@@ -942,10 +930,6 @@ button {
   justify-content: center;
 }
 
-.section--final-cta {
-  background: var(--surface);
-}
-
 .section--final-cta .section__centered {
   text-align: center;
   gap: 1.5rem;
@@ -961,9 +945,9 @@ button {
 }
 
 .final-cta__note {
-  margin: 0;
   color: var(--muted);
   font-size: 0.95rem;
+  margin-bottom: 0;
 }
 
 .workflow__action,
